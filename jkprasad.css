@@ -7,7 +7,7 @@
 /* Root variables (unchanged) */
 :root{
   --bg: #ffffff;
-  --text: #476788;
+  --text: #000000;
   --muted: #7F8C8D;
   --accent: #4CAF50;        /* PRD accent */
   --nav-accent: #ff6b35;    /* secondary orange for CTAs if needed */

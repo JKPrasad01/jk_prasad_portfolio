@@ -76,6 +76,7 @@ body{
 .nav-menu li a:hover,.nav-menu li a.active{color:var(--nav-accent);transform:translateY(-2px)}
 .nav-cta .btn{margin-left:1rem}
 
+
 /* MOBILE HAMBURGER (visible on small screens, hidden on desktop) */
 /* default: show hamburger (mobile-first) */
 .hamburger{
@@ -83,6 +84,19 @@ body{
   background:none;
   border:0;
   cursor:pointer;
+}
+/* for effects on header menu background when navigating */
+.nav-menu li a.active {
+  color: var(--nav-accent);
+  background-color: rgba(255, 107, 53, 0.15); /* light orange tint */
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  background-color: rgba(255, 107, 53, 0.25);
+  border-radius: 6px;
 }
 .hamburger .hamburger-line{width:26px;height:3px;background:var(--text);display:block;border-radius:3px;position:relative}
 .hamburger .hamburger-line::after,.hamburger .hamburger-line::before{content:"";position:absolute;left:0;right:0;height:3px;border-radius:3px;background:var(--text)}

@@ -547,10 +547,7 @@ body.dark-mode section {
 }
 
 /* Hero Section Text */
-body.dark-mode .hero-title,
-body.dark-mode .hero-sub {
-  color: #ffffff;
-}
+
 
 /* Footer in Dark Mode */
 body.dark-mode .site-footer {
@@ -571,3 +568,166 @@ body.dark-mode .btn-outline:hover {
   background-color: #ff6b35;
   color: white;
 }
+
+
+/* This code is for adjusting intro section ,project sections and about me section features like coding etc to dark theme*/
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Welcome section */
+
+
+/* About Me feature items */
+body.dark-mode .interests li {
+  background: #1e1e1e;
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: #ffffff;
+}
+
+body.dark-mode .interests li i {
+  color: #ff9800; /* icon color in dark mode */
+}
+
+/* Projects section */
+body.dark-mode .project-card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #333;
+}
+
+body.dark-mode .project-card h3 {
+  color: #ffcc00;
+}
+
+/*all are working except intro section so to work with that this is the code*/
+/* Dark mode - Hero Section Fix */
+
+
+
+
+/*improved text....but still not working so to improve that this code*/
+/* Force Hero Section text colors in Dark Mode */
+
+
+
+
+
+/* === Dark Mode Adjustments for Hero Section === */
+
+
+/* this code changed dark mode the intro section */
+body.dark-mode .hero,
+body.dark-mode .hero * {
+  background-color: #1a1a1a !important; /* Dark background */
+  color: #ffffff !important;           /* White text */
+}
+
+body.dark-mode .hero p {
+  color: #cccccc !important; /* Slightly lighter for readability */
+}
+
+/* === Dark Mode for About Section === */
+body.dark-mode .about-grid {
+  background-color: #121212 !important;
+}
+
+body.dark-mode .about-text p,
+body.dark-mode .about-text li {
+  color: #e0e0e0 !important;
+}
+
+/* === Dark Mode for Project Cards === */
+body.dark-mode .project-card {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode .project-body p {
+  color: #cccccc !important;
+}
+
+/* === Dark Mode for Skills Section === */
+body.dark-mode .skill-card {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode .skill-card h3 {
+  color: #ff9800 !important;
+}
+
+/* === Dark Mode for Features in About Me === */
+body.dark-mode .interests li {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0 !important;
+}
+
+
+
+/* this code changed dark mode the intro section */
+/* === Buttons in Dark Mode === */
+body.dark-mode .btn-primary {
+  background-color: #ff5722 !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode .btn-outline {
+  border: 1px solid #ff5722 !important;
+  color: #ff5722 !important;
+}
+
+
+
+
+
+/*all dark for intro section*/
+/* Dark Mode - Hero Section Full Coverage */
+/* ===== Dark Mode Hero Section ===== */
+
+/* ===== FINAL Dark Mode Styling for Hero Section ===== */
+body.dark-mode .hero {
+  background-color: #121212 !important; /* Dark background */
+  color: #ffffff !important;            /* Default text color */
+}
+
+body.dark-mode .hero .eyebrow {
+  color: #ff5722 !important; /* Orange accent for 'WELCOME TO MY WORLD' */
+}
+
+body.dark-mode .hero-title {
+  color: #ffffff !important; /* White title */
+}
+
+body.dark-mode .hero-sub {
+  color: #ff9800 !important; /* Highlight for subheading */
+}
+
+body.dark-mode .hero .lead {
+  color: #cccccc !important; /* Paragraphs in light gray */
+}
+
+body.dark-mode .hero .btn-primary {
+  background-color: #ff5722 !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode .hero .btn-ghost {
+  background-color: transparent !important;
+  border: 1px solid #ff5722 !important;
+  color: #ff5722 !important;
+}
+
+
+
+
+
+
+
+
+
+
+

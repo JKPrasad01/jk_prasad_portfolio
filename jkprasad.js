@@ -75,6 +75,8 @@ document.addEventListener('DOMContentLoaded', function () {
   toggle.addEventListener('keyup', (e) => { if (e.key === 'Enter') toggle.click(); });
 });
 
+
+
 // ===== Dark Mode Toggle =====
 document.getElementById('theme-toggle').addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');

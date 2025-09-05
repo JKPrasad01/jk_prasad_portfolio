@@ -25,6 +25,36 @@ Built with a clean and modern UI, the site is **responsive, fast, and accessible
 
 ---
 
+
+## 📸 Screenshots  
+
+<p align="center" style="display: flex; justify-content: center; gap: 20px;">
+
+  <!-- Home -->
+  <div style="text-align: center; width: 350px; padding: 10px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+    <h3>🏠 Home Page</h3>
+    <img src="https://github.com/JKPrasad01/jk_prasad_portfolio/blob/main/home%20portfolio.png" alt="Home Page" width="330" style="border-radius: 8px;" />
+  </div>
+
+  <!-- Projects -->
+  <div style="text-align: center; width: 350px; padding: 10px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+    <h3>💼 Projects</h3>
+    <img src="https://github.com/JKPrasad01/jk_prasad_portfolio/blob/main/projects%20section.png" alt="Projects Section" width="330" style="border-radius: 8px;" />
+  </div>
+
+  <!-- Contact -->
+  <div style="text-align: center; width: 350px; padding: 10px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+    <h3>📬 Contact</h3>
+    <img src="https://github.com/JKPrasad01/jk_prasad_portfolio/blob/main/contact%20section.png" alt="Contact Section" width="330" style="border-radius: 8px;" />
+  </div>
+
+</p>
+
+
+---
+
+
+
 ## 💻 Tech Stack
 
 
@@ -70,9 +100,9 @@ The site is deployed using **GitHub Pages**:
 
 | **Section**   | **Preview** |
 |---------------|-------------|
-| 🏠 **Home Page** | *(Add screenshot here)* |
-| 💼 **Projects**  | *(Add screenshot here)* |
-| 📬 **Contact**   | *(Add screenshot here)* |
+| 🏠 **Home Page** | *(https://github.com/JKPrasad01/jk_prasad_portfolio/blob/main/home%20portfolio.png)* |
+| 💼 **Projects**  | *(https://github.com/JKPrasad01/jk_prasad_portfolio/blob/main/projects%20section.png)* |
+| 📬 **Contact**   | *(https://github.com/JKPrasad01/jk_prasad_portfolio/blob/main/contact%20section.png)* |
 
 
 ---

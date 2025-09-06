@@ -8,7 +8,7 @@
 This is my **personal portfolio website** showcasing my skills, projects, certifications, and professional experience.  
 Built with a clean and modern UI, the site is **responsive, fast, and accessible**, designed to help recruiters, collaborators, and clients know more about me.
 
-🔗 **Live Site:** [Click here](https://jkprasad01.github.io/My-portfolio)
+🔗 **Live Site:** [Click here](https://jkprasad01.github.io/jk_prasad_portfolio/)
 
 ---
 
@@ -92,7 +92,7 @@ The site is deployed using **GitHub Pages**:
 4️⃣ Save  
 
 👉 Your portfolio will be live at:  
-🔗 **[jkprasad01.github.io/My-portfolio](https://jkprasad01.github.io/My-portfolio)**  
+🔗 **[jkprasad01.github.io/My-portfolio](https://jkprasad01.github.io/jk_prasad_portfolio/)**  
 
 ---
 

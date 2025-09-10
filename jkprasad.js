@@ -1,5 +1,3 @@
-/* main.js — interactions, smooth scroll, form handling, accessibility */
-
 document.addEventListener('DOMContentLoaded', function () {
   // Mobile menu toggle
   const toggle = document.getElementById('mobile-toggle');
@@ -18,10 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
       const el = document.querySelector(href);
       if (el) {
         el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        // close mobile menu
         if (menu.classList.contains('open')) {
           menu.classList.remove('open');
-          toggle.setAttribute('aria-expanded','false');
+          toggle.setAttribute('aria-expanded', 'false');
         }
       }
     });
@@ -45,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Year in footer
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  // Contact form submission (Formspree) — Ajax
+  // Contact form submission (Formspree)
   const form = document.getElementById('contact-form');
   const note = document.getElementById('form-note');
   form.addEventListener('submit', function (e) {
@@ -71,41 +68,59 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // keyboard accessibility for hamburger
-  toggle.addEventListener('keyup', (e) => { if (e.key === 'Enter') toggle.click(); });
-});
+  // Keyboard accessibility for hamburger
+  toggle.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter') toggle.click();
+  });
 
+  // Skills Tab Switching
+  document.querySelectorAll('.tab-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      document.getElementById(button.dataset.tab).classList.add('active');
+    });
+  });
 
+  // Theme Toggle with Icon Switch and System Preference
+  const themeToggle = document.getElementById('theme-toggle');
+  const themeIcon = themeToggle.querySelector('i');
 
-// ===== Dark Mode Toggle =====
-document.getElementById('theme-toggle').addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
-
-  // Save preference in localStorage
-  if (document.body.classList.contains('dark-mode')) {
-    localStorage.setItem('theme', 'dark');
-  } else {
-    localStorage.setItem('theme', 'light');
+  function setTheme(theme) {
+    if (theme === 'dark') {
+      document.body.classList.add('dark-mode');
+      themeIcon.classList.replace('fa-moon', 'fa-sun');
+    } else {
+      document.body.classList.remove('dark-mode');
+      themeIcon.classList.replace('fa-sun', 'fa-moon');
+    }
+    try {
+      localStorage.setItem('theme', theme);
+    } catch (e) {
+      console.warn('localStorage is not available:', e);
+    }
   }
-});
 
-// Load theme preference on page load
-window.addEventListener('DOMContentLoaded', () => {
-  if (localStorage.getItem('theme') === 'dark') {
-    document.body.classList.add('dark-mode');
-  }
-});
+  window.addEventListener('DOMContentLoaded', () => {
+    let savedTheme;
+    try {
+      savedTheme = localStorage.getItem('theme');
+    } catch (e) {
+      console.warn('localStorage is not available:', e);
+    }
+    if (!savedTheme) {
+      savedTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    setTheme(savedTheme);
+  });
 
+  themeToggle.addEventListener('click', () => {
+    const newTheme = document.body.classList.contains('dark-mode') ? 'light' : 'dark';
+    setTheme(newTheme);
+  });
 
-
-
-// Skills Tab Switching
-document.querySelectorAll('.tab-btn').forEach(button => {
-  button.addEventListener('click', () => {
-    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
-
-    document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-    document.getElementById(button.dataset.tab).classList.add('active');
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    setTheme(e.matches ? 'dark' : 'light');
   });
 });
